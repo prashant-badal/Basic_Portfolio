@@ -10,7 +10,7 @@ import Gujrati from '../images/gujrati.jpeg'
 
 export const MenuList=[{
 name:"Dosa",
-description:" Dosa is a delicious and popular food that originates from South India.",
+description:" Dosa is a delicious and popular food that originates from South part  India.",
 image:Dosa,
 price:200
 
