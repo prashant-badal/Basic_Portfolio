@@ -1,0 +1,32 @@
+.navigationOption{
+  list-style-type: none;
+ display: flex;
+
+justify-content: center;
+justify-content: space-evenly;
+
+}
+.navigationOption li a  {
+  text-decoration: none;
+  color: rgb(252, 249, 245);
+}
+.NavigationOptionMobile{
+   list-style-type: none;
+
+}
+
+
+.NavigationOptionMobile li a  {
+  text-decoration: none;
+  color: rgb(99, 62, 13);
+ font-weight: 900;
+
+  
+}
+.active{
+  color:goldenrod !important;
+  font-weight: bold !important;
+
+}
+
+
