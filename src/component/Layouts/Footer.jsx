@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Link } from 'react-router-dom';
 
 const Footer =()=> {
   return (
@@ -22,23 +23,28 @@ const Footer =()=> {
       },
       "& svg :hover":{
         color:"goldenrod",
-        transform:'translateX(2px)',
+        transform:'translateX(1px)',
         transition:'all 400ms'
       }
+  
 
     }}>
-       <IconButton aria-label="socialHandle"  >
+    <a href="https://www.facebook.com" target="_blank">   <IconButton  aria-label="socialHandle"  >
     <InstagramIcon />
-    </IconButton>
+    </IconButton></a>
+      
       <IconButton aria-label="socialHandle" >
     <YouTubeIcon/>
     </IconButton>
       <IconButton aria-label="socialHandle" >
-    <FacebookIcon/>
+
+      <a href="https://www.facebook.com" target="_blank">  <FacebookIcon/> </a>
+   
     </IconButton>
 
   <IconButton aria-label="socialHandle" >
-   <GitHubIcon/>
+   <a href="https://www.example.com" target="_blank">  <GitHubIcon/></a>
+ 
     </IconButton>
     
     </Box>
@@ -50,7 +56,7 @@ const Footer =()=> {
     <Typography variant='h5'  
     sx={{textAlign:"center"}}
     >
-    All Rights Reserved &copy; Techinfo YT</Typography>
+    All Rights Reserved &copy; Prashant Badal</Typography>
      </Box>
     </Box>
     </>

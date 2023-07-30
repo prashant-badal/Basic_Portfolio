@@ -1,46 +1,90 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../component/Layouts/Layout'
-import { MenuList } from '../Data/data'
-import { Button,Box,CardContent, Card,CardActionArea, CardActions, CardMedia, Typography } from '@mui/material'
+import { Box,CardContent, Card,CardActionArea, CardMedia, Typography, Button } from '@mui/material';
+import { MenuItem } from '../Data/MenuObj';
+
 const Menu = () => {
+    // const [ascending,setAscending]=useState(true);
+//       const [sortAscending,setSortAscending]=useState([...MenuItem]);
+
+// const handleSortClick=()=>{
+//   if(ascending){
+//    setSortAscending([...MenuItem].sort((a, b) => a.cost - b.cost));
+//     }
+//     else{
+//       // setSortAscending([...MenuItem]).sort((a, b) => b.cost - a.cost));
+//     }
+//     setAscending(!ascending); // Toggle the sorting order
+    
+
+//   };
+  
+
   return (
-      <>
+
+  
+    <>
     <Layout>
-    <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center",justifyContent:"space-around",bgcolor:"#ebc6c3"
+
+      <Box sx={{display:"flex",flexWrap:"wrap",justifyContent:"center",justifyContent:"space-around",bgcolor:"#ebc6c3"
     }}>
-    {MenuList.map((item)=>(
-<Card  sx={{maxWidth:250,m:2}}>
-<CardActionArea>
+{/* <Button >{ascending?'Sort Descending':'Sort Ascending'
+
+}
+ </Button> */}
+   
+    {MenuItem.map((items)=>(
+<Card  sx={{maxWidth:600,m:2}}>
+<CardActionArea sx={{display:"flex"}}>
+
+
+<Box>
 <CardMedia 
-sx={{minHeight:"280px"}}
+sx={{maxHeight:"120px",minWidth:"100px"}}
 component="img"
-image={item.image}
-alt="MenuFood"
+image={items.itemImage}
+alt="Items_Img"
  />
 
 
+</Box>
+
+<Box>
 <CardContent>
-<Typography variant='h5' component='div'>{item.name}</Typography>
+<Typography variant='h5' component='div'>
+{items.item}
+</Typography>
+<Typography variant='h6' component='div'>Rs {" "}
+{items.cost}
+</Typography>
+
 <Typography variant="body2" color="text.secondary">
-         {item.description}
+
+         {items.detail}
           </Typography>
+          </CardContent>
+</Box>
 
-</CardContent>
+
+
+
 </CardActionArea>
-<CardActions>
-<Button varient="filled"> Add to Card</Button>
 
-</CardActions>
+<Button variant='outlined' sx={{m:2,mx:5}}>Add to cart</Button>
+
 
 </Card>
 
   ))}
     </Box>
   
-    </Layout>
-     
-</>
-  )
-}
+    
+ 
+       </Layout>
+    </>
+  );
+  }
+
+
 
 export default Menu

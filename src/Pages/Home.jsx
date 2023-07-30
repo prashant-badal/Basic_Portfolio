@@ -28,7 +28,7 @@ const Home = () => {
     <Typography sx={{fontWeight:"bold",fontFamily:"cursive"}}variant="h4" component="div">Food Website</Typography>
 
    <Typography color="#122459" sx={{fontFamily:"cursive",px:"2rem",my:".4rem"}}  variant="body" component="div">Best Food In India</Typography>
-   <Link to='/menu' >
+   <Link to='/restaurant' >
    <Button 
    sx={{mx:"2.7rem",my:"1rem",
    }

@@ -26,7 +26,11 @@ const NavButtonOption=[
 
   {
   title:"Menu",
-  link:"/menu"
+  link:"/restaurant/menu"
+},
+ {
+  title:"Restaurant",
+  link:"/restaurant"
 }
 
 

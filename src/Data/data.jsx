@@ -8,51 +8,55 @@ import Paneer from '../images/paneer.jpg'
 import Gujrati from '../images/gujrati.jpeg'
 
 
-export const MenuList=[{
-name:"Dosa",
+export const RestaurantList=[{
+
+name:"Sweety Sweets",
+address:"lpu gate ,Punjab",
 description:" Dosa is a delicious and popular food that originates from South part  India.",
-image:Dosa,
-price:200
-
+image:Chola
 },
+
 {
-name:"Chola",
+name:"Cario Bakery",
 description:" Chola is a delicious and popular food that originates from South India.",
-image:Chola,
-price:200
-
+address:"lpu gate ,Punjab",
+image:Paneer
 },
 {
-name:"Idli",
+name:"yours Dosa",
 description:" Idli is a delicious and popular food that originates from the South India.",
-image:Idli,
-price:200
-
+address:"lpu gate ,Punjab",
+image:Gujrati
 },
 {
-name:"MasalaDosa",
+name:"MasalaDosa hut",
 description:" MasalaDosa is a delicious and popular food that originates from South India.",
-image:MasalaDosa,
-price:200
-
+address:"lpu gate ,Punjab",
+image:MasalaDosa
 },
 {
-name:"Paneer",
+name:"Punjabi Tarka",
 description:" Paneer is a delicious and popular food that originates from South India.",
-image:Paneer,
-price:200
-
+address:"lpu gate ,Punjab",
+image:Idli
 },
 {
-name:"Gujrati",
+name:"Gujrati Foods",
 description:" Gujrati is a delicious and popular food that originates from South India.",
-image:Gujrati,
-price:200
-
+address:"lpu gate ,Punjab",
+image:MasalaDosa
+},{
+name:"MasalaDosa hut",
+description:" MasalaDosa is a delicious and popular food that originates from South India.",
+address:"lpu gate ,Punjab",
+image:Idli
+},
+{
+name:"MasalaDosa hut",
+description:" MasalaDosa is a delicious and popular food that originates from South India.",
+address:"lpu gate ,Punjab",
+image:Paneer
 }
-
-
-
 
 
 ]
